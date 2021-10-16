@@ -42,13 +42,6 @@
     "useTabs": false,
     "vueIndentScriptAndStyle": false
   },
-  "lint-staged": {
-    "*.ts": [
-      "tslint",
-      "prettier --write",
-      "git add"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
