@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint ./src --fix",
+    "lint": "eslint --ext .ts,.tsx src --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -70,16 +70,5 @@
     "prettier": "^2.1.2",
     "pretty-quick": "^3.1.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "tslint",
-      "prettier --write",
-      "git add"
-    ]
-  }
+  "pre-commit": "lint-staged"
 }
