@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+const name = obj.name;
+
 const App = function () {
   return (
     <div className="App">
