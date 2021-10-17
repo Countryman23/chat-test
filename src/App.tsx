@@ -2,14 +2,14 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-function a = 5;
+// function a = 5;
 
 const App = function () {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>There will be00 test</p>
+        <p>There will be 00 test</p>
         <a
           className="App-link"
           href="https://reactjs.org"
