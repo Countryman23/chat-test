@@ -9,7 +9,7 @@ const App = function () {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>There will be 00 test</p>
+        <p>There will be 00sj test</p>
         <a
           className="App-link"
           href="https://reactjs.org"
