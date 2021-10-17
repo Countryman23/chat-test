@@ -9,7 +9,7 @@ const App = function () {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>There will be2test</p>
+        <p>There will be test</p>
         <a
           className="App-link"
           href="https://reactjs.org"
