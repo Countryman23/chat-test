@@ -28,9 +28,11 @@
         "prettier"
     ],
     "rules": {
+        "new-cap": 0,
         "require-jsdoc": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/ban-types": "off"
+        "@typescript-eslint/ban-types": "off",
+        "react/prop-types": "off"
         
     }
 }
