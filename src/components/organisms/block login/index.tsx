@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLogin from "../../atoms/button";
+import ButtonLogin from "../../atoms/button/index";
 import Logo from "../../atoms/logo/index";
 import MoleculesInput from "../../molecules/block input";
 import MoleculesTitle from "../../molecules/block title";
@@ -18,7 +18,7 @@ function OrganismsLogin() {
         <MoleculesInput />
       </div>
       <div>
-        <ButtonLogin />
+        <ButtonLogin>Log in</ButtonLogin>
       </div>
     </div>
   );
