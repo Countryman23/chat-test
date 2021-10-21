@@ -1,12 +1,15 @@
 import React from "react";
-import Subtitle from "../../atoms/title/titlemain/index";
-import Title from "../../atoms/title/subtitle/index";
+import Title from "../../atoms/title/titlemain/index";
+import Subtitle from "../../atoms/title/subtitle/index";
+import "../style.sass";
 
 function MoleculesTitle() {
   return (
-    <div>
-      <Title />
-      <Subtitle />
+    <div className="block__molecules">
+      <div className="block__molecules block__molecules__title">
+        <Title />
+        <Subtitle />
+      </div>
     </div>
   );
 }

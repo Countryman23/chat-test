@@ -7,8 +7,8 @@ import "../style.sass";
 
 function OrganismsLogin() {
   return (
-    <div>
-      <div className="logo">
+    <div className="block__organisms">
+      <div className="block__organisms block__organisms__logo">
         <Logo />
       </div>
       <div>

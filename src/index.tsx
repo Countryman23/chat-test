@@ -4,7 +4,6 @@ import "./index.sass";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-// require("typeface-montserrat");
 
 ReactDOM.render(
   <React.StrictMode>

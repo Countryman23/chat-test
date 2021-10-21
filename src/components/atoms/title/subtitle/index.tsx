@@ -3,8 +3,10 @@ import "../style.sass";
 
 function Subtitle() {
   return (
-    <div className="subtitle">
-      <h2>Please, autorize yourself</h2>
+    <div className="block__title">
+      <div className="block__title block__title__subtitle">
+        <p>Please, autorize yourself</p>
+      </div>
     </div>
   );
 }

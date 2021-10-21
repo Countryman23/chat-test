@@ -1,13 +1,15 @@
 import React from "react";
 import "../style.sass";
 
-function InputMame() {
+function InputName() {
   return (
-    <div className="inputMame">
-      <p>User name</p>
-      <input placeholder="Input user name" />
+    <div className="block__input">
+      <div className="block__input block__input__name">
+        <p>User name</p>
+        <input placeholder="Input user name" />
+      </div>
     </div>
   );
 }
 
-export default InputMame;
+export default InputName;
