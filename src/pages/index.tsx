@@ -1,15 +1,16 @@
 import React from "react";
-import TemplatesLogin from "../components/templates/block login/index";
-// import TemplatesChat from "../components/templates/block chat/templatesChat";
-// import { Route } from "react-router-dom";
+import TemplatesLogin from "../components/templates/blockLogin/index";
+import TemplatesChat from "../components/templates/blockChat/index";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function Index() {
   return (
-    <>
-      <TemplatesLogin />
-      {/* <Route path="/Login" render={() => <TemplatesLogin />} />;
-      <Route path="/Chat" render={() => <TemplatesChat />} />; */}
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={TemplatesLogin}></Route>
+        <Route path="/Chat" component={TemplatesChat}></Route>
+      </Switch>
+    </Router>
   );
 }
 

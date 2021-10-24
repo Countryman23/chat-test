@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.sass";
 import Bg from "../../../img/Frame.png";
-import OrganismsLogin from "../../organisms/block login/index";
+import OrganismsLogin from "../../organisms/blockLogin/index";
 // import { NavLink } from "react-router-dom";
 
 function TemplatesLogin() {
@@ -24,6 +24,7 @@ function TemplatesLogin() {
 
 export default TemplatesLogin;
 
+// подключить стили по БЭМ
 // function TemplatesLogin() {
 //   return (
 //     <>

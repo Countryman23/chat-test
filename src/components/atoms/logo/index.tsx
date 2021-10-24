@@ -3,7 +3,7 @@ import logoLeft from "../../../img/Vector.png";
 import logoRight from "../../../img/Vector2.png";
 import "./style.sass";
 
-function Logo() {
+function AtomLogo() {
   return (
     <div className="block__logo">
       <img src={logoLeft} alt="logo" />
@@ -12,4 +12,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default AtomLogo;
