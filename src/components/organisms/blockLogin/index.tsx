@@ -30,7 +30,7 @@ function OrganismsLogin() {
         name: inputValue.name,
       });
     } else {
-      setError("Fill in the fields!");
+      setError("Something goes wrong");
     }
   };
 

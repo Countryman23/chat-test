@@ -1,1 +1,56 @@
-
+.block__chat
+    &__nav
+        position: relative
+        z-index: 1
+        margin: 0 auto
+        width: 1439px
+        height: 80px
+        background-color: #fff
+        border-bottom: 1px solid #88abe3
+        display: flex
+        justify-content: space-between
+        &-logo
+            width: 70%
+            padding-top: 22px
+            padding-left: 24px
+            img
+                width: 41px
+                height: 30px
+                margin-right: 3px
+        &-ico
+            padding-top: 6px
+            padding-right: 24px
+    &__main
+        margin: 0 auto
+        width: 1440px
+        height: 1000px
+        display: grid
+        grid-template-areas: "n c"
+        grid-template-columns: 2.333fr 7fr
+        &__navigation
+            grid-area: n
+            background-color: #fff
+            border-right: 1px solid #88abe3
+        &__content
+            position: relative
+            grid-area: c
+            background-color: #fff
+            &__head
+                position: absolute
+                width: 1080px
+                height: 96px
+                background-color: #fff
+                z-index: 1
+            &__messages
+                height: 824px
+                img
+                    position: absolute
+                    top: -80px
+                    width: 1080px
+            &__footer
+                position: absolute
+                z-index: 1
+                bottom: 0px
+                width: 1080px
+                height: 80px
+                background-color: #fff

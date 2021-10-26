@@ -3,7 +3,8 @@
         margin-top: 16px
         margin-bottom: 48px
 
-.block__login
+.block__loginM
+    position: relative
     &__name, &__pass
         font-style: normal
         font-weight: normal
@@ -27,6 +28,8 @@
         color: #333333
         margin-bottom: 4px
     &__btn
+        position: absolute
+        top: 193px
         appearance: none
         background: none
         border: none
@@ -40,7 +43,7 @@
         font-weight: 00
         font-size: 15px
         line-height: 23px
-        margin-top: 16px
+        margin-top: 48px
         cursor: pointer
         &:hover
             background: #4583DE
@@ -48,3 +51,22 @@
             background: #2C6AC7
         &:disabled
             background: #D1D1D1
+    &-error
+        font-style: normal
+        font-weight: 500
+        font-size: 13px
+        line-height: 19px
+        color: #FB6262
+        &-img
+            width: 354px
+            height: 56px
+            position: absolute
+            top: -60px
+            border-radius: 8px
+            border: 1px solid #FB6262
+            img
+                position: absolute
+                top: 17px
+                right: 14px
+    &__pass
+        margin-bottom: 4px

@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from "react";
 import "../molecules/style.sass";
+import ErrorImg from "../../img/error.png";
 
 interface ILoginForm {
   Login: (inputValue: { name: string; password: string }) => void;
@@ -35,14 +36,13 @@ const MoleculesLoginForm: React.FC<ILoginForm> = ({ Login, error }) => {
   };
 
   return (
-    <div className="block__login">
+    <div className="block__loginM">
       <form onSubmit={submitHandler}>
         <div>
-          {error !== "" ? <div>{error}</div> : ""}
           <div>
             <p>User name</p>
             <input
-              className="block__login block__login__name"
+              className="block__loginM block__loginM__name"
               type="text"
               name="name"
               id="name"
@@ -54,7 +54,7 @@ const MoleculesLoginForm: React.FC<ILoginForm> = ({ Login, error }) => {
           <div>
             <p>Password</p>
             <input
-              className="block__login block__login__pass"
+              className="block__loginM block__loginM__pass"
               type="password"
               name="password"
               id="password"
@@ -62,9 +62,19 @@ const MoleculesLoginForm: React.FC<ILoginForm> = ({ Login, error }) => {
               onChange={changeHandler}
               value={inputValue.password}
             />
+            {error !== "" ? (
+              <div className="block__loginM block__loginM-error">
+                {error}
+                <div className="block__loginM block__loginM-error-img">
+                  <img src={ErrorImg} alt="error" />
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
           <button
-            className="block__login block__login__btn"
+            className="block__loginM block__loginM__btn"
             disabled={!formValid}
             type="submit"
           >
@@ -77,6 +87,12 @@ const MoleculesLoginForm: React.FC<ILoginForm> = ({ Login, error }) => {
 };
 
 export default MoleculesLoginForm;
+
+// className={emailIdErr ? ' showError' : ''}
+
+// if(!this.state.password){
+//   passwordError = "Password field is required";
+// }
 
 // import React, { FormEvent, useState } from "react";
 // // import React, { FormEvent, useState, useEffect } from "react";

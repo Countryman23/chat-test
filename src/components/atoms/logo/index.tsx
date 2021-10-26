@@ -1,6 +1,6 @@
 import React from "react";
-import logoLeft from "../../../img/Vector.png";
-import logoRight from "../../../img/Vector2.png";
+import logoLeft from "../../../img/logo1.png";
+import logoRight from "../../../img/logo2.png";
 import "./style.sass";
 
 function AtomLogo() {
