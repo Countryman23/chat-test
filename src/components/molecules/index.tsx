@@ -31,11 +31,19 @@ function MoleculesLoginForm() {
     }
   };
 
+  // const Logout = () => {
+  //   console.log("Logout");
+  //   setUser({
+  //     name: "",
+  //   });
+  // };
+
   return (
     <div>
       {user.name !== "" ? (
         <Redirect to={"/Chat"} />
       ) : (
+        // <button onClick={Logout}>Logout</button>
         <LoginForm Login={Login} error={error} />
       )}
     </div>
