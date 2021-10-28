@@ -71,6 +71,7 @@
                 z-index: 1
                 padding-top: 24px
                 padding-left: 24px
+                border-bottom: 1px solid #d7e6ff
                 &-person
                     p
                         font-style: normal
@@ -90,6 +91,25 @@
                     position: absolute
                     top: -80px
                     width: 1080px
+                span
+                    position: absolute
+                    border-radius: 12px
+                    transform: rotate(90deg)
+                    &:first-child
+                        width: 815px
+                        height: 6px
+                        bottom: 490px
+                        right: -399px
+                        background: #E1ECFE
+                        z-index: 1
+                    &:last-child
+                        bottom: 262px
+                        right: -175px
+                        width: 366px
+                        height: 6px
+                        z-index: 2
+                        background: #C5DAFF
+
             &__footer
                 position: absolute
                 z-index: 1
@@ -100,9 +120,27 @@
                 display: flex
                 justify-content: space-between
                 align-items: center
+                padding-top: 12px
+                padding-left: 29px
+                padding-right: 29px
+                border-top: 1px solid #d7e6ff
                 &-load
                     display: flex
                     justify-content: start
+                    img
+                        width: 22px
+                        margin-right: 37px
+                    p
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 20px
+                        color: #CACACA
+                        margin-top: 4px
+                &-arrow
+                    img
+                        width: 24px
+                        height: 20px
 
 .active-item
     background-color: #5C98F1

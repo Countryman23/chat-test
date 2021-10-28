@@ -6,6 +6,7 @@ import BgChat from "../../../img/Frame3.png";
 import Mask from "../../../img/Mask.png";
 import Screpka from "../../../img/Screpka.png";
 import Arrow from "../../../img/arrow.png";
+import { NavLink } from "react-router-dom";
 
 function TemplatesChat() {
   return (
@@ -15,11 +16,10 @@ function TemplatesChat() {
           <div className="block__chat block__chat__nav-logo">
             <AtomLogo />
           </div>
-          {/* <div>
-            <button onClick={() => Router.push('/')}>Go back to main page</button>
-          </div> */}
           <div className="block__chat block__chat__nav-ico">
-            <img src={Ico} alt="ico" />
+            <NavLink to="/">
+              <img src={Ico} alt="ico" />
+            </NavLink>
           </div>
         </div>
         <div className="block__chat block__chat__main">
@@ -71,7 +71,13 @@ function TemplatesChat() {
               </div>
             </div>
             <div className="block__chat  block__chat__main__content__messages">
-              <img src={BgChat} alt="BgChat" />
+              <div>
+                <img src={BgChat} alt="BgChat" />
+              </div>
+              <div>
+                <span></span>
+                <span></span>
+              </div>
             </div>
             <div className="block__chat  block__chat__main__content__footer">
               <div className="block__chat  block__chat__main__content__footer-load">
@@ -82,7 +88,7 @@ function TemplatesChat() {
                   <p>Write something...</p>
                 </div>
               </div>
-              <div>
+              <div className="block__chat  block__chat__main__content__footer-arrow">
                 <img src={Arrow} alt="Arrow" />
               </div>
             </div>
